@@ -243,7 +243,15 @@ const char MtkCameraParameters::KEY_AF_Y[] = "af-y";
 // Effect 
 const char MtkCameraParameters::EFFECT_SEPIA_BLUE[] = "sepiablue";
 const char MtkCameraParameters::EFFECT_SEPIA_GREEN[] = "sepiagreen";
-
+const char MtkCameraParameters::EFFECT_NASHVILLE[] = "nashville";
+const char MtkCameraParameters::EFFECT_HEFE[] = "hefe";
+const char MtkCameraParameters::EFFECT_VALENCIA[] = "valencia";
+const char MtkCameraParameters::EFFECT_XPROII[] = "xproll";
+const char MtkCameraParameters::EFFECT_LOFI[] = "lofi";
+const char MtkCameraParameters::EFFECT_SIERRA[] = "sierra";
+const char MtkCameraParameters::EFFECT_KELVIN[] = "kelvin";
+const char MtkCameraParameters::EFFECT_WALDEN[] = "walden";
+const char MtkCameraParameters::EFFECT_F1977[] = "f1977";
 //
 //  on/off => FIXME: should be replaced with TRUE[]
 const char MtkCameraParameters::ON[] = "on";
@@ -317,6 +325,27 @@ const int MtkCameraParameters::KEY_ENG_SHADING_TABLE_TSF = 4;
 // KEY for [Engineer Mode] Add new camera paramters for ev calibration
 const char MtkCameraParameters::KEY_ENG_EV_CALBRATION_OFFSET_VALUE[] = "eng-ev-cal-offset";
 
+// KEY for [Engineer Mode] MFLL: Multi-frame lowlight capture
+const char MtkCameraParameters::KEY_ENG_MFLL_SUPPORTED[] = "eng-mfll-supported";
+const char MtkCameraParameters::KEY_ENG_MFLL_ENABLE[] = "eng-mfll-enable";
+const char MtkCameraParameters::KEY_ENG_MFLL_PICTURE_COUNT[] = "eng-mfll-picture-count";
+
+// KEY for [Engineer Mode] Two more sensor mode
+const char MtkCameraParameters::KEY_ENG_SENOSR_MODE_SLIM_VIDEO1_SUPPORTED[] = "eng-senosr-mode-slim-video1-supported";
+const char MtkCameraParameters::KEY_ENG_SENOSR_MODE_SLIM_VIDEO2_SUPPORTED[] = "eng-senosr-mode-slim-video2-supported";
+
+// KEY for [Engineer Mode] Video raw dump
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_RESIZE_TO_2M_SUPPORTED[] = "eng-video-raw-dump-resize-to-2m-supported";
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_RESIZE_TO_4K2K_SUPPORTED[] = "eng-video-raw-dump-resize-to-4k2k-supported";
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_CROP_CENTER_2M_SUPPORTED[] = "eng-video-raw-dump-crop-center-2m-supported";
+
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_SUPPORTED[] = "eng-video-raw-dump-manual-frame-rate-supported";
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_ENABLE[] = "eng-video-raw-dump-manual-frame-rate-enable";
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_MIN[] = "eng-video-raw-dump-manual-frame-rate-min";
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_MAX[] = "eng-video-raw-dump-manual-frame-rate-max";
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_RANGE_LOW[] = "eng-video-raw-dump-manual-frame-rate-range-low";
+const char MtkCameraParameters::KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_RANGE_HIGH[] = "eng-video-raw-dump-manual-frame-rate-range-high";
+
 #ifdef MTK_SLOW_MOTION_VIDEO_SUPPORT
 // High Speed Video Record
 const char MtkCameraParameters::KEY_HSVR_PRV_SIZE[] = "hsvr-prv-size";
@@ -324,8 +353,5 @@ const char MtkCameraParameters::KEY_SUPPORTED_HSVR_PRV_SIZE[] = "hsvr-prv-size-v
 const char MtkCameraParameters::KEY_HSVR_PRV_FPS[] = "hsvr-prv-fps";
 const char MtkCameraParameters::KEY_SUPPORTED_HSVR_PRV_FPS[] = "hsvr-prv-fps-values";
 #endif
-const char MtkCameraParameters::KEY_DXOEIS_ONOFF[] = "dxo-eis";
-const char MtkCameraParameters::KEY_FIX_EXPOSURE_TIME[] = "fix-exposure-time";
 
 }; // namespace android
-

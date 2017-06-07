@@ -38,9 +38,11 @@ LOCAL_SRC_FILES:= \
 	CameraUtils.cpp \
 	VendorTagDescriptor.cpp
 
+# Mediatek
 ifeq ($(BOARD_HAS_MTK_HARDWARE),true)
-	LOCAL_SRC_FILES+= \
-		MtkCameraParameters.cpp
+LOCAL_SRC_FILES += \
+	mediatek/MtkCamera.cpp \
+	mediatek/MtkCameraParameters.cpp
 endif
 
 LOCAL_SHARED_LIBRARIES := \
