@@ -305,15 +305,6 @@ public:
     // Values for effect 
     static const char EFFECT_SEPIA_BLUE[];
     static const char EFFECT_SEPIA_GREEN[];    
-    static const char  EFFECT_NASHVILLE[];
-    static const char  EFFECT_HEFE[];
-    static const char  EFFECT_VALENCIA[];
-    static const char  EFFECT_XPROII[];
-    static const char  EFFECT_LOFI[];
-    static const char  EFFECT_SIERRA[];
-    static const char  EFFECT_KELVIN[];
-    static const char  EFFECT_WALDEN[];;
-    static const char  EFFECT_F1977[];
     // Values for AWB 
     static const char WHITE_BALANCE_TUNGSTEN[];
     // Eng
@@ -375,26 +366,6 @@ public:
     // KEY for [Engineer Mode] Add new camera paramters for ev calibration
     static const char KEY_ENG_EV_CALBRATION_OFFSET_VALUE[];
 
-    // KEY for [Engineer Mode] MFLL: Multi-frame lowlight capture
-    static const char KEY_ENG_MFLL_SUPPORTED[];
-    static const char KEY_ENG_MFLL_ENABLE[];
-    static const char KEY_ENG_MFLL_PICTURE_COUNT[];
-
-    // KEY for [Engineer Mode] Two more sensor mode
-    static const char KEY_ENG_SENOSR_MODE_SLIM_VIDEO1_SUPPORTED[];
-    static const char KEY_ENG_SENOSR_MODE_SLIM_VIDEO2_SUPPORTED[];
-
-    // KEY for [Engineer Mode] Video raw dump
-    static const char KEY_ENG_VIDEO_RAW_DUMP_RESIZE_TO_2M_SUPPORTED[];
-    static const char KEY_ENG_VIDEO_RAW_DUMP_RESIZE_TO_4K2K_SUPPORTED[];
-    static const char KEY_ENG_VIDEO_RAW_DUMP_CROP_CENTER_2M_SUPPORTED[];
-    static const char KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_SUPPORTED[];
-    static const char KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_ENABLE[];
-    static const char KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_MIN[];
-    static const char KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_MAX[];
-    static const char KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_RANGE_LOW[];
-    static const char KEY_ENG_VIDEO_RAW_DUMP_MANUAL_FRAME_RATE_RANGE_HIGH[];
-
 #ifdef MTK_SLOW_MOTION_VIDEO_SUPPORT
     // High Speed Video Record
     static const char KEY_HSVR_PRV_SIZE[];
@@ -403,6 +374,8 @@ public:
     static const char KEY_SUPPORTED_HSVR_PRV_FPS[];
 #endif
 
+    static const char KEY_DXOEIS_ONOFF[];
+    static const char KEY_FIX_EXPOSURE_TIME[];
 	//
 public:     ////    on/off => FIXME: should be replaced with TRUE[]
     static const char ON[];
@@ -412,3 +385,4 @@ public:     ////    on/off => FIXME: should be replaced with TRUE[]
 }; // namespace android
 
 #endif
+
